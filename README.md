@@ -14,5 +14,8 @@ The Script [serviceaccount/create-github-serviceaccount.sh](scripts/serviceaccou
 ## Persistent Volume Claims
 The template file [workspaces/sources-pvc.yaml.tpl](scripts/workspaces/sources-pvc.yaml.tpl) is used to create a Persistent Volume Claim.
 The Script [workspaces/create-pvc.sh](scripts/workspaces/create-pvc.sh) refers to that template file to create the secret. 
-
+## Tasks
+###
+The [tasks/list-directory-task.yml](scripts/tasks/list-directory-task.yml) describes a Task that lists the contents of a workspace. 
+The Script [tasks/create-list-dir-task.sh](scripts/tasks/create-list-dir-task.sh) refers to that template file to create the secret. 
 
