@@ -20,5 +20,10 @@ The [tasks/list-directory-task.yml](scripts/tasks/list-directory-task.yml) descr
 The Script [tasks/create-list-dir-task.sh](scripts/tasks/create-list-dir-task.sh) refers to that template file to create the task. 
 ## Pipelines
 The [pipelines/list-directory-task.yml](scripts/pipelines/clone-list-pipeline.yml.tpl) describes a sample Pipeline that checks out a GitHub/GitLab repository. 
-The Script [pipelines/create-clone-list-pipeline.sh](scripts/pipelines/create-clone-list-pipeline.sh) refers to that template file to create the pipeline. 
+The Script [pipelines/create-clone-list-pipeline.sh](scripts/pipelines/create-clone-list-pipeline.sh) refers to that template file to create the pipeline.
+## Pipelineruns
+## CloneList pipeline
+The Script [pipelineruns/clonelist-animalordersoap.sh](scripts/pipelineruns/clonelist-animalordersoap.sh) starts the clone-list-pipeline, for the AnimalOrderSOAP project.
+
+
 
