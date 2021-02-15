@@ -10,3 +10,6 @@ echo Expand $YAML_TPL to $YAML
 envsubst < $YAML_TPL > $YAML
 echo Create new Persistence Volume Claim $PVC_SRC
 kubectl apply -n $NS -f $YAML
+echo Get  new Persistence Volume Claim $PVC_SRC
+kubectl get pvc $PVC_SRC -o yaml
+
