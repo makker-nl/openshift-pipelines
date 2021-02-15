@@ -15,7 +15,10 @@ The Script [serviceaccount/create-github-serviceaccount.sh](scripts/serviceaccou
 The template file [workspaces/sources-pvc.yaml.tpl](scripts/workspaces/sources-pvc.yaml.tpl) is used to create a Persistent Volume Claim.
 The Script [workspaces/create-pvc.sh](scripts/workspaces/create-pvc.sh) refers to that template file to create the PVC. 
 ## Tasks
-###
+### list-directory
 The [tasks/list-directory-task.yml](scripts/tasks/list-directory-task.yml) describes a Task that lists the contents of a workspace. 
 The Script [tasks/create-list-dir-task.sh](scripts/tasks/create-list-dir-task.sh) refers to that template file to create the task. 
+## Pipelines
+The [pipelines/list-directory-task.yml](scripts/pipelines/clone-list-pipeline.yml.tpl) describes a sample Pipeline that checks out a GitHub/GitLab repository. 
+The Script [pipelines/create-clone-list-pipeline.sh](scripts/pipelines/create-clone-list-pipeline.sh) refers to that template file to create the pipeline. 
 
