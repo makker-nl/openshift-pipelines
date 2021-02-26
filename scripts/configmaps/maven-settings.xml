@@ -1,0 +1,34 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>public</id>
+      <username>makker</username>
+      <password>MijnWachtWoord</password>
+    </server>
+    <server>
+      <id>releases</id>
+      <username>makker</username>
+      <password>MijnWachtWoord</password>
+    </server>
+    <server>
+      <id>snapshots</id>
+      <username>makker</username>
+      <password>MijnWachtWoord</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://nexus:8081/repository/maven-public/</url>
+    </mirror>
+    <mirror>
+      <id>public</id>
+      <mirrorOf>central</mirrorOf>
+      <name>Your company's Nexus public repository for Red Hat Fuse</name>
+      <url>https://build.yourcompany.com/nexus/repository/rhf-public</url>
+    </mirror>
+  </mirrors>
+</settings>
