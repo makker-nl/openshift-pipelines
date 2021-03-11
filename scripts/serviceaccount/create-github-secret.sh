@@ -11,7 +11,7 @@ envsubst < $YAML_TPL > $YAML
 echo Create new secret $SECRET_NAME
 oc create -f $YAML
 echo Annotate new secret $SECRET_NAME
-kubectl annotate -n $NS secret $SECRET_NAME \
+oc annotate -n $NS secret $SECRET_NAME \
   "tekton.dev/git-0=${GIT_HOST}"
 echo Get new secret $SECRET_NAME
-kubectl get -n $NS secret $SECRET_NAME -o yaml
+oc get -n $NS secret $SECRET_NAME -o yaml

@@ -8,6 +8,6 @@ YAML_TPL=$YAML.tpl
 echo Expand $YAML_TPL to $YAML
 envsubst < $YAML_TPL > $YAML
 echo Delete old pipeline $PIPELINE
-kubectl delete pipeline -n $NS $PIPELINE
+oc delete pipeline -n $NS $PIPELINE
 echo Create/apply new pipeline $PIPELINE
-kubectl apply -n $NS -f $YAML
+oc apply -n $NS -f $YAML

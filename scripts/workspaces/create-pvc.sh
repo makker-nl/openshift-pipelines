@@ -5,10 +5,10 @@ SCRIPTPATH=$(dirname $0)
 YAML=sources-pvc.yaml
 YAML_TPL=$YAML.tpl
 echo Check Default Storage Class\(es\)
-kubectl get sc
+oc get sc
 echo Expand $YAML_TPL to $YAML
 envsubst < $YAML_TPL > $YAML
 echo Create new Persistence Volume Claim $PVC_SRC
-kubectl apply -n $NS -f $YAML
+oc apply -n $NS -f $YAML
 echo Get  new Persistence Volume Claim $PVC_SRC
-kubectl get pvc $PVC_SRC -o yaml
+oc get pvc $PVC_SRC -o yaml

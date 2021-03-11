@@ -4,6 +4,6 @@ SCRIPTPATH=$(dirname $0)
 # Create a clone of maven cluster task for openshift profile.
 TASK=os-maven
 echo Delete old clustertask $TASK
-kubectl delete clustertask $TASK
+oc delete clustertask $TASK
 echo Create new clustertask $TASK
-kubectl create  -f os-maven-clustertask.yml
+oc -f os-maven-clustertask.yml
