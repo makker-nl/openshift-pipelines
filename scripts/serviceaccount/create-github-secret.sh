@@ -2,7 +2,7 @@
 SCRIPTPATH=$(dirname $0)
 . $SCRIPTPATH/../bin/oc_env.sh
 # Create a gitlab secret from accompanying yaml file.
-YAML=github-makker-secret.yml
+YAML=github-secret.yml
 YAML_TPL=$YAML.tpl
 echo Delete old secret $SECRET_NAME
 oc delete secret $SECRET_NAME
