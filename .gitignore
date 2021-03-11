@@ -24,3 +24,6 @@ hs_err_pid*
 
 # project file
 .project
+
+# specific files
+oc_env.sh
