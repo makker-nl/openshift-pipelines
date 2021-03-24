@@ -3,7 +3,7 @@ SCRIPTPATH=$(dirname $0)
 . $SCRIPTPATH/../bin/oc_env.sh
 # Create a pipeline with clone and listdirectory tasks.
 PIPELINE=fabric8-deploy-pipeline
-YAML=fabric8-deploy-pipeline.yml
+YAML=$SCRIPTPATH/fabric8-deploy-pipeline.yml
 YAML_TPL=$YAML.tpl
 echo Expand $YAML_TPL to $YAML
 envsubst < $YAML_TPL > $YAML
