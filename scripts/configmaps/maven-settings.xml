@@ -11,14 +11,9 @@
   <mirrors>
     <mirror>
       <id>nexus</id>
-      <mirrorOf>*</mirrorOf>
+      <mirrorOf>central</mirrorOf>
       <url>http://nexus:8081/repository/maven-public/</url>
     </mirror>
-    <mirror>
-      <id>public</id>
-      <mirrorOf>central</mirrorOf>
-      <name>Your company's Nexus public repository for Red Hat Fuse</name>
-      <url>https://build.yourcompany.com/nexus/repository/rhf-public</url>
     </mirror>
   </mirrors>
 </settings>
