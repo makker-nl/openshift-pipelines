@@ -40,7 +40,7 @@ spec:
           workspace: $WS_SRC
     - name: fabric8-deploy
       taskRef:
-        name: os-maven
+        name: maven
         kind: ClusterTask
       runAfter:
         - list-fetched-repo

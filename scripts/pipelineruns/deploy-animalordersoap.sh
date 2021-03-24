@@ -14,7 +14,7 @@ echo . workspace: $WS_SRC
 echo . Persistence volume claim: $PVC_SRC
 tkn pipeline start $PIPELINE \
   --namespace=$NS \
-  --serviceaccount=$SERVICE_ACCOUNT \
+  --serviceaccount=$DFT_SERVICE_ACCOUNT \
   --workspace name=$WS_MVN,config=$CM_MVN \
   --workspace name=$WS_SRC,claimName=$PVC_SRC \
   --param private-github-repo-url=$GH_REPO_URL \
