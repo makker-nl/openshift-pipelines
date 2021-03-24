@@ -7,16 +7,6 @@
       <username>makker</username>
       <password>MijnWachtWoord</password>
     </server>
-    <server>
-      <id>releases</id>
-      <username>makker</username>
-      <password>MijnWachtWoord</password>
-    </server>
-    <server>
-      <id>snapshots</id>
-      <username>makker</username>
-      <password>MijnWachtWoord</password>
-    </server>
   </servers>
   <mirrors>
     <mirror>
